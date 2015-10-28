@@ -26,5 +26,12 @@ namespace TameImpala.Controllers
 
             return View();
         }
+
+        public ActionResult UpcomingGigs()
+        {
+            ViewBag.Message = "Below is a list of upcoming gigs";
+
+            return View();
+        }
     }
 }
