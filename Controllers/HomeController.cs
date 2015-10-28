@@ -33,5 +33,12 @@ namespace TameImpala.Controllers
 
             return View();
         }
+
+        public ActionResult PreviousGigs()
+        {
+            ViewBag.Message = "Below is a list of previous gigs";
+
+            return View();
+        }
     }
 }
