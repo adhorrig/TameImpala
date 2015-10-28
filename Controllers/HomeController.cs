@@ -40,5 +40,12 @@ namespace TameImpala.Controllers
 
             return View();
         }
+
+        public ActionResult ListenTo()
+        {
+            ViewBag.Message = "Listen to music by Tame Impala";
+
+            return View();
+        }
     }
 }
