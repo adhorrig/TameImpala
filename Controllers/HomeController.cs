@@ -47,5 +47,12 @@ namespace TameImpala.Controllers
 
             return View();
         }
+
+        public ActionResult Profile()
+        {
+            ViewBag.Message = "Your profile information is below";
+
+            return View();
+        }
     }
 }
