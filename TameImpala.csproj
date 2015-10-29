@@ -168,14 +168,23 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FavoriteGigsController.cs" />
+    <Compile Include="Controllers\GoingToGigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PreviousGigsController.cs" />
+    <Compile Include="Controllers\UpcomingGigsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\FavoriteGig.cs" />
+    <Compile Include="Models\GoingToGig.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PreviousGig.cs" />
+    <Compile Include="Models\TameImpalaContext.cs" />
+    <Compile Include="Models\UpcomingGig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -238,6 +247,26 @@
     <Content Include="Views\Home\PreviousGigs.cshtml" />
     <Content Include="Views\Home\ListenTo.cshtml" />
     <Content Include="Views\Home\Profile.cshtml" />
+    <Content Include="Views\UpcomingGigs\Create.cshtml" />
+    <Content Include="Views\UpcomingGigs\Delete.cshtml" />
+    <Content Include="Views\UpcomingGigs\Details.cshtml" />
+    <Content Include="Views\UpcomingGigs\Edit.cshtml" />
+    <Content Include="Views\UpcomingGigs\Index.cshtml" />
+    <Content Include="Views\PreviousGigs\Create.cshtml" />
+    <Content Include="Views\PreviousGigs\Delete.cshtml" />
+    <Content Include="Views\PreviousGigs\Details.cshtml" />
+    <Content Include="Views\PreviousGigs\Edit.cshtml" />
+    <Content Include="Views\PreviousGigs\Index.cshtml" />
+    <Content Include="Views\GoingToGigs\Create.cshtml" />
+    <Content Include="Views\GoingToGigs\Delete.cshtml" />
+    <Content Include="Views\GoingToGigs\Details.cshtml" />
+    <Content Include="Views\GoingToGigs\Edit.cshtml" />
+    <Content Include="Views\GoingToGigs\Index.cshtml" />
+    <Content Include="Views\FavoriteGigs\Create.cshtml" />
+    <Content Include="Views\FavoriteGigs\Delete.cshtml" />
+    <Content Include="Views\FavoriteGigs\Details.cshtml" />
+    <Content Include="Views\FavoriteGigs\Edit.cshtml" />
+    <Content Include="Views\FavoriteGigs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
