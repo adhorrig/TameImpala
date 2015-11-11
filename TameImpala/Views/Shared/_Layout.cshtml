@@ -45,7 +45,7 @@
     @RenderSection("scripts", required: false)
     <script>
     $(function() {
-        $('#btnCallService').click(function() {
+        $('#btnGetGigs').click(function() {
             $.ajax({
             type: 'POST',
             url: 'TameImpalaService.asmx/GetAllGigs',
