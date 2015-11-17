@@ -20,6 +20,10 @@ namespace TameImpala.Controllers
             return View(db.UpcomingGigs.ToList());
         }
 
+        public ActionResult Search()
+        {
+            return View(db.UpcomingGigs.ToList());
+        }
         // GET: UpcomingGigs/Details/5
         public ActionResult Details(int? id)
         {

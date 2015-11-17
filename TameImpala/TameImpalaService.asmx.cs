@@ -42,7 +42,7 @@ namespace TameImpala
         [WebMethod]
         public List<UpcomingGig> GetGigByLocation(string location)
         {
-            var gigs = db.UpcomingGigs.Where(u => u.Location == location).ToList();
+            var gigs = db.UpcomingGigs.Where(u => u.Location.Contains(location)).ToList();
             return gigs;
         }
 
