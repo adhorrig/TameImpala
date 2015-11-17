@@ -72,3 +72,4 @@ C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\De
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.firstMigration.resources
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.secondMigration.resources
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.thirdMigration.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.News.resources

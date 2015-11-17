@@ -172,6 +172,7 @@
     <Compile Include="Controllers\GoingToGigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\PreviousGigsController.cs" />
     <Compile Include="Controllers\UpcomingGigsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -193,12 +194,17 @@
     <Compile Include="Migrations\201511171542430_thirdMigration.Designer.cs">
       <DependentUpon>201511171542430_thirdMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511171725027_News.cs" />
+    <Compile Include="Migrations\201511171725027_News.Designer.cs">
+      <DependentUpon>201511171725027_News.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FavoriteGig.cs" />
     <Compile Include="Models\GoingToGig.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\News.cs" />
     <Compile Include="Models\PreviousGig.cs" />
     <Compile Include="Models\TameImpalaContext.cs" />
     <Compile Include="Models\UpcomingGig.cs" />
@@ -285,6 +291,11 @@
     <Content Include="Views\FavoriteGigs\Details.cshtml" />
     <Content Include="Views\FavoriteGigs\Edit.cshtml" />
     <Content Include="Views\FavoriteGigs\Index.cshtml" />
+    <Content Include="Views\News\Create.cshtml" />
+    <Content Include="Views\News\Delete.cshtml" />
+    <Content Include="Views\News\Details.cshtml" />
+    <Content Include="Views\News\Edit.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -309,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511171542430_thirdMigration.resx">
       <DependentUpon>201511171542430_thirdMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511171725027_News.resx">
+      <DependentUpon>201511171725027_News.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
