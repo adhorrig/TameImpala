@@ -7,7 +7,7 @@ namespace TameImpala.Models
 {
     public class News
     {
-        public string NewsID { get; set; }
+        public int NewsID { get; set; }
         public string url { get; set; }
         public string title { get; set; }
         public string description { get; set; }

@@ -198,6 +198,10 @@
     <Compile Include="Migrations\201511171725027_News.Designer.cs">
       <DependentUpon>201511171725027_News.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511171745425_newsIDstringToint.cs" />
+    <Compile Include="Migrations\201511171745425_newsIDstringToint.Designer.cs">
+      <DependentUpon>201511171745425_newsIDstringToint.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FavoriteGig.cs" />
@@ -323,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511171725027_News.resx">
       <DependentUpon>201511171725027_News.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511171745425_newsIDstringToint.resx">
+      <DependentUpon>201511171745425_newsIDstringToint.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
