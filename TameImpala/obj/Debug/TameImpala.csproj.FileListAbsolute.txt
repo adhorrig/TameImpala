@@ -67,3 +67,8 @@ C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\Mi
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.csprojResolveAssemblyReference.cache
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.dll
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.pdb
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.InitialCreate.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.csproj.GenerateResource.Cache
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.firstMigration.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.secondMigration.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.thirdMigration.resources

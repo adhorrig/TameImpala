@@ -177,6 +177,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511112017017_InitialCreate.cs" />
+    <Compile Include="Migrations\201511112017017_InitialCreate.Designer.cs">
+      <DependentUpon>201511112017017_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511171538437_firstMigration.cs" />
+    <Compile Include="Migrations\201511171538437_firstMigration.Designer.cs">
+      <DependentUpon>201511171538437_firstMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511171540241_secondMigration.cs" />
+    <Compile Include="Migrations\201511171540241_secondMigration.Designer.cs">
+      <DependentUpon>201511171540241_secondMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511171542430_thirdMigration.cs" />
+    <Compile Include="Migrations\201511171542430_thirdMigration.Designer.cs">
+      <DependentUpon>201511171542430_thirdMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FavoriteGig.cs" />
     <Compile Include="Models\GoingToGig.cs" />
@@ -279,6 +296,20 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201511112017017_InitialCreate.resx">
+      <DependentUpon>201511112017017_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511171538437_firstMigration.resx">
+      <DependentUpon>201511171538437_firstMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511171540241_secondMigration.resx">
+      <DependentUpon>201511171540241_secondMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511171542430_thirdMigration.resx">
+      <DependentUpon>201511171542430_thirdMigration.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

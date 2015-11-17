@@ -21,7 +21,7 @@ namespace TameImpala.Controllers
         }
 
         // GET: GoingToGigs/Details/5
-        public ActionResult Details(bool? id)
+        public ActionResult Details(int? id)
         {
             if (id == null)
             {
@@ -46,7 +46,7 @@ namespace TameImpala.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "GoingToGigID,UserID")] GoingToGig goingToGig)
+        public ActionResult Create([Bind(Include = "GoingToGigID,attending,UserID")] GoingToGig goingToGig)
         {
             if (ModelState.IsValid)
             {
@@ -59,7 +59,7 @@ namespace TameImpala.Controllers
         }
 
         // GET: GoingToGigs/Edit/5
-        public ActionResult Edit(bool? id)
+        public ActionResult Edit(int? id)
         {
             if (id == null)
             {
@@ -78,7 +78,7 @@ namespace TameImpala.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "GoingToGigID,UserID")] GoingToGig goingToGig)
+        public ActionResult Edit([Bind(Include = "GoingToGigID,attending,UserID")] GoingToGig goingToGig)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace TameImpala.Controllers
         }
 
         // GET: GoingToGigs/Delete/5
-        public ActionResult Delete(bool? id)
+        public ActionResult Delete(int? id)
         {
             if (id == null)
             {
@@ -107,7 +107,7 @@ namespace TameImpala.Controllers
         // POST: GoingToGigs/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(bool id)
+        public ActionResult DeleteConfirmed(int id)
         {
             GoingToGig goingToGig = db.GoingToGigs.Find(id);
             db.GoingToGigs.Remove(goingToGig);

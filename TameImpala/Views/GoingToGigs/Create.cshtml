@@ -16,11 +16,11 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.GoingToGigID, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.attending, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 <div class="checkbox">
-                    @Html.EditorFor(model => model.GoingToGigID)
-                    @Html.ValidationMessageFor(model => model.GoingToGigID, "", new { @class = "text-danger" })
+                    @Html.EditorFor(model => model.attending)
+                    @Html.ValidationMessageFor(model => model.attending, "", new { @class = "text-danger" })
                 </div>
             </div>
         </div>

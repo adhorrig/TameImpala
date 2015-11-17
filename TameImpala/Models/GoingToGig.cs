@@ -7,7 +7,8 @@ namespace TameImpala.Models
 {
     public class GoingToGig
     {
-        public Boolean GoingToGigID { get; set; }
+        public int GoingToGigID { get; set; }
+        public Boolean attending { get; set; }
         public string UserID { get; set; }
     }
 }
