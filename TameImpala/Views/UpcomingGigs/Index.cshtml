@@ -54,4 +54,60 @@
     </tr>
 }
 
+
+
 </table>
+<h2>Search by location</h2>
+
+<div>
+    <input id="searchString" type="text" placeholder="Enter a location" />
+    <br />
+    <br />
+    <input type="button" value="Search gigs " class="btn btn-primary" onclick="doSearch()" />
+
+</div>
+
+<div id="results">
+
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+        function doSearch() {
+            $("#results").html("");
+
+            var queryData = {
+                "location": $("#searchString").val() //from webmethod
+            };
+
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: "/TameImpalaService.asmx/GetGigByLocation",
+                data: JSON.stringify(queryData),
+                dataType: "json",
+                async: true,
+                success: function (result, textStatus) {
+                    if (textStatus == "success") {
+                        console.log(JSON.stringify(result));
+                        var data = "";
+                        data += "<br><br>Showing results for " + result.d[0].Location + "<br><br>"; //from db
+                        for (var i = 0; i < result.d.length; i++) {
+                            data += "<p class=lead>" + "ID = " + result.d[i].UpcomingGigID + "</p>";
+                            data += "<p class=lead>" + "Title = " + result.d[i].Title + "</p>";
+                            data += "<p class=lead>" + "Description = " + result.d[i].Description + "</p>";
+                            data += "<p class=lead>" + "Price = " + result.d[i].Price + "</p>";
+                            data += "<p class=lead>" + "Location = " + result.d[i].Location + "</p>";
+                        }
+
+                        $("#results").append(data);
+                        console.log(data);
+                    }
+                },
+                error: function (result, status, error) {
+                    $("results").html("error");
+                }
+            })
+        }
+    </script>
+}
