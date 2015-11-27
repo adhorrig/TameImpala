@@ -206,6 +206,10 @@
     <Compile Include="Migrations\201511181445446_seed.Designer.cs">
       <DependentUpon>201511181445446_seed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511271518397_removeUserID.cs" />
+    <Compile Include="Migrations\201511271518397_removeUserID.Designer.cs">
+      <DependentUpon>201511271518397_removeUserID.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FavoriteGig.cs" />
@@ -232,6 +236,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\tameimpalafansite - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\tameimpalafansite - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -337,6 +343,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511181445446_seed.resx">
       <DependentUpon>201511181445446_seed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511271518397_removeUserID.resx">
+      <DependentUpon>201511271518397_removeUserID.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

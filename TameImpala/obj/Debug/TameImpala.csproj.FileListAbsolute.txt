@@ -75,3 +75,4 @@ C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\De
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.newsIDstringToint.resources
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.csprojResolveAssemblyReference.cache
 C:\Users\Adam\documents\visual studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.seed.resources
+C:\Users\Adam\documents\visual studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.removeUserID.resources

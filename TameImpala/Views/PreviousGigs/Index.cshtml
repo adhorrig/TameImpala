@@ -26,9 +26,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Rating)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UserID)
-        </th>
+
         <th></th>
     </tr>
 
@@ -49,9 +47,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Rating)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UserID)
-        </td>
+
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.PreviousGigID }) |
             @Html.ActionLink("Details", "Details", new { id=item.PreviousGigID }) |

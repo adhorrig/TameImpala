@@ -27,6 +27,17 @@ namespace TameImpala.Migrations
                 new UpcomingGig() { Title = "Test Title", Price = 50, Description = "Test Description", Location = "Test Location", Date = new DateTime(2015, 5, 15, 13, 45, 0) }
                 );
 
+            context.PreviousGigs.AddOrUpdate(x => x.PreviousGigID,
+                new PreviousGig() { Title = "Test Title", Rating = 50, Description = "Test Description", Location = "Test Location", Date = new DateTime(2015, 5, 15, 13, 45, 0) },
+                new PreviousGig() { Title = "Test Title", Rating = 50, Description = "Test Description", Location = "Test Location", Date = new DateTime(2015, 5, 15, 13, 45, 0) },
+                new PreviousGig() { Title = "Test Title", Rating = 50, Description = "Test Description", Location = "Test Location", Date = new DateTime(2015, 5, 15, 13, 45, 0) },
+                new PreviousGig() { Title = "Test Title", Rating = 50, Description = "Test Description", Location = "Test Location", Date = new DateTime(2015, 5, 15, 13, 45, 0) },
+                new PreviousGig() { Title = "Test Title", Rating = 50, Description = "Test Description", Location = "Test Location", Date = new DateTime(2015, 5, 15, 13, 45, 0) },
+                new PreviousGig() { Title = "Test Title", Rating = 50, Description = "Test Description", Location = "Test Location", Date = new DateTime(2015, 5, 15, 13, 45, 0) },
+                new PreviousGig() { Title = "Test Title", Rating = 50, Description = "Test Description", Location = "Test Location", Date = new DateTime(2015, 5, 15, 13, 45, 0) },
+                new PreviousGig() { Title = "Test Title", Rating = 50, Description = "Test Description", Location = "Test Location", Date = new DateTime(2015, 5, 15, 13, 45, 0) }
+                );
+
 
         }
 
