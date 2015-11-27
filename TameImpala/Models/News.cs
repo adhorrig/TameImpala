@@ -5,9 +5,9 @@ using System.Web;
 
 namespace TameImpala.Models
 {
-    public class News
+    public class Article
     {
-        public int NewsID { get; set; }
+        public int ArticleID { get; set; }
         public string url { get; set; }
         public string title { get; set; }
         public string description { get; set; }

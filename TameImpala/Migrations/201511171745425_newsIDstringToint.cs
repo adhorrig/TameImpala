@@ -7,16 +7,16 @@ namespace TameImpala.Migrations
     {
         public override void Up()
         {
-            DropPrimaryKey("dbo.News");
-            AlterColumn("dbo.News", "NewsID", c => c.Int(nullable: false, identity: true));
-            AddPrimaryKey("dbo.News", "NewsID");
+            DropPrimaryKey("dbo.Article");
+            AlterColumn("dbo.Article", "ArticleID", c => c.Int(nullable: false, identity: true));
+            AddPrimaryKey("dbo.Article", "ArticleID");
         }
         
         public override void Down()
         {
-            DropPrimaryKey("dbo.News");
-            AlterColumn("dbo.News", "NewsID", c => c.String(nullable: false, maxLength: 128));
-            AddPrimaryKey("dbo.News", "NewsID");
+            DropPrimaryKey("dbo.Article");
+            AlterColumn("dbo.Article", "ArticleID", c => c.String(nullable: false, maxLength: 128));
+            AddPrimaryKey("dbo.Article", "ArticleID");
         }
     }
 }

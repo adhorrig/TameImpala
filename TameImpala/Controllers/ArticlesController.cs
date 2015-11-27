@@ -10,107 +10,107 @@ using TameImpala.Models;
 
 namespace TameImpala.Controllers
 {
-    public class NewsController : Controller
+    public class ArticlesController : Controller
     {
         private TameImpalaContext db = new TameImpalaContext();
 
-        // GET: News
+        // GET: Articles
         public ActionResult Index()
         {
-            return View(db.Newss.ToList());
+            return View(db.Arcticles.ToList());
         }
 
-        // GET: News/Details/5
+        // GET: Articles/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            News news = db.Newss.Find(id);
-            if (news == null)
+            Article article = db.Arcticles.Find(id);
+            if (article == null)
             {
                 return HttpNotFound();
             }
-            return View(news);
+            return View(article);
         }
 
-        // GET: News/Create
+        // GET: Articles/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: News/Create
+        // POST: Articles/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "NewsID,url,title,description")] News news)
+        public ActionResult Create([Bind(Include = "ArticleID,url,title,description")] Article article)
         {
             if (ModelState.IsValid)
             {
-                db.Newss.Add(news);
+                db.Arcticles.Add(article);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(news);
+            return View(article);
         }
 
-        // GET: News/Edit/5
+        // GET: Articles/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            News news = db.Newss.Find(id);
-            if (news == null)
+            Article article = db.Arcticles.Find(id);
+            if (article == null)
             {
                 return HttpNotFound();
             }
-            return View(news);
+            return View(article);
         }
 
-        // POST: News/Edit/5
+        // POST: Articles/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "NewsID,url,title,description")] News news)
+        public ActionResult Edit([Bind(Include = "ArticleID,url,title,description")] Article article)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(news).State = EntityState.Modified;
+                db.Entry(article).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(news);
+            return View(article);
         }
 
-        // GET: News/Delete/5
+        // GET: Articles/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            News news = db.Newss.Find(id);
-            if (news == null)
+            Article article = db.Arcticles.Find(id);
+            if (article == null)
             {
                 return HttpNotFound();
             }
-            return View(news);
+            return View(article);
         }
 
-        // POST: News/Delete/5
+        // POST: Articles/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            News news = db.Newss.Find(id);
-            db.Newss.Remove(news);
+            Article article = db.Arcticles.Find(id);
+            db.Arcticles.Remove(article);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -168,11 +168,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ArticlesController.cs" />
     <Compile Include="Controllers\FavoriteGigsController.cs" />
     <Compile Include="Controllers\GoingToGigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\PreviousGigsController.cs" />
     <Compile Include="Controllers\UpcomingGigsController.cs" />
     <Compile Include="Global.asax.cs">
@@ -209,6 +209,14 @@
     <Compile Include="Migrations\201511271518397_removeUserID.cs" />
     <Compile Include="Migrations\201511271518397_removeUserID.Designer.cs">
       <DependentUpon>201511271518397_removeUserID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511271814433_refactor.cs" />
+    <Compile Include="Migrations\201511271814433_refactor.Designer.cs">
+      <DependentUpon>201511271814433_refactor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511271829597_articlepopulation.cs" />
+    <Compile Include="Migrations\201511271829597_articlepopulation.Designer.cs">
+      <DependentUpon>201511271829597_articlepopulation.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -305,11 +313,11 @@
     <Content Include="Views\FavoriteGigs\Details.cshtml" />
     <Content Include="Views\FavoriteGigs\Edit.cshtml" />
     <Content Include="Views\FavoriteGigs\Index.cshtml" />
-    <Content Include="Views\News\Create.cshtml" />
-    <Content Include="Views\News\Delete.cshtml" />
-    <Content Include="Views\News\Details.cshtml" />
-    <Content Include="Views\News\Edit.cshtml" />
-    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\Articles\Create.cshtml" />
+    <Content Include="Views\Articles\Delete.cshtml" />
+    <Content Include="Views\Articles\Details.cshtml" />
+    <Content Include="Views\Articles\Edit.cshtml" />
+    <Content Include="Views\Articles\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -346,6 +354,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511271518397_removeUserID.resx">
       <DependentUpon>201511271518397_removeUserID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511271814433_refactor.resx">
+      <DependentUpon>201511271814433_refactor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511271829597_articlepopulation.resx">
+      <DependentUpon>201511271829597_articlepopulation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
