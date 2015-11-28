@@ -26,7 +26,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.URL)
+            <a href="@Html.DisplayFor(modelItem => item.URL)">@Html.DisplayFor(modelItem => item.URL)</a>
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
