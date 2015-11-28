@@ -8,7 +8,7 @@ namespace TameImpala.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.Article",
+                "dbo.News",
                 c => new
                     {
                         NewsID = c.String(nullable: false, maxLength: 128),
@@ -22,7 +22,7 @@ namespace TameImpala.Migrations
         
         public override void Down()
         {
-            DropTable("dbo.Article");
+            DropTable("dbo.News");
         }
     }
 }

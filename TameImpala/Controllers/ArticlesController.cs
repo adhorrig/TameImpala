@@ -17,7 +17,7 @@ namespace TameImpala.Controllers
         // GET: Articles
         public ActionResult Index()
         {
-            return View(db.Arcticles.ToList());
+            return View(db.Articles.ToList());
         }
 
         // GET: Articles/Details/5
@@ -27,7 +27,7 @@ namespace TameImpala.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Article article = db.Arcticles.Find(id);
+            Article article = db.Articles.Find(id);
             if (article == null)
             {
                 return HttpNotFound();
@@ -46,11 +46,11 @@ namespace TameImpala.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ArticleID,url,title,description")] Article article)
+        public ActionResult Create([Bind(Include = "ArticleID,URL,Title,Description")] Article article)
         {
             if (ModelState.IsValid)
             {
-                db.Arcticles.Add(article);
+                db.Articles.Add(article);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -65,7 +65,7 @@ namespace TameImpala.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Article article = db.Arcticles.Find(id);
+            Article article = db.Articles.Find(id);
             if (article == null)
             {
                 return HttpNotFound();
@@ -78,7 +78,7 @@ namespace TameImpala.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ArticleID,url,title,description")] Article article)
+        public ActionResult Edit([Bind(Include = "ArticleID,URL,Title,Description")] Article article)
         {
             if (ModelState.IsValid)
             {
@@ -96,7 +96,7 @@ namespace TameImpala.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Article article = db.Arcticles.Find(id);
+            Article article = db.Articles.Find(id);
             if (article == null)
             {
                 return HttpNotFound();
@@ -109,8 +109,8 @@ namespace TameImpala.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Article article = db.Arcticles.Find(id);
-            db.Arcticles.Remove(article);
+            Article article = db.Articles.Find(id);
+            db.Articles.Remove(article);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
-  <parameter name="IIS Web Application Name" description="" value="tameimpalafansite" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Adam\\documents\\visual\ studio\ 2015\\Projects\\TameImpala\\TameImpala\\obj\\Release\\Package\\PackageTmp$" />
-    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Adam\\documents\\visual\ studio\ 2015\\Projects\\TameImpala\\TameImpala\\obj\\Release\\Package\\PackageTmp$" />
+  <parameter name="IIS Web Application Name" description="" value="tameimpala" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Adam\\Documents\\Visual\ Studio\ 2015\\Projects\\TameImpala\\TameImpala\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\Adam\\Documents\\Visual\ Studio\ 2015\\Projects\\TameImpala\\TameImpala\\obj\\Release\\Package\\PackageTmp$" />
   </parameter>
-  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:y6js07fsfz.database.windows.net,1433;Initial Catalog=TameImpalaContext;User Id=aitproject2015@y6js07fsfz;Password=Footballcrazy1!" tags="">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Adam\\documents\\visual\ studio\ 2015\\Projects\\TameImpala\\TameImpala\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=tcp:zlr9f2d4pb.database.windows.net,1433;Initial Catalog=tameimpA8mGqeUNg;User Id=tameimpala@zlr9f2d4pb;Password=Footballcrazy1!" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Adam\\Documents\\Visual\ Studio\ 2015\\Projects\\TameImpala\\TameImpala\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
   </parameter>
 </parameters>

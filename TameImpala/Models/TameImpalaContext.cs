@@ -17,6 +17,7 @@ namespace TameImpala.Models
         public DbSet<UpcomingGig> UpcomingGigs { get; set; }
         public DbSet<PreviousGig> PreviousGigs { get; set; }
         public DbSet<GoingToGig> GoingToGigs { get; set; }
-        public DbSet<Article> Arcticles { get; set; }
+        public DbSet<Article> Articles { get; set; }
+        
     }
 }
