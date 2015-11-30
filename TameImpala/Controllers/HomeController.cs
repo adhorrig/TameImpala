@@ -22,7 +22,7 @@ namespace TameImpala.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Get in touch!";
 
             return View();
         }

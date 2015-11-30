@@ -16,10 +16,18 @@ namespace TameImpala.Migrations
 
         protected override void Seed(TameImpala.Models.TameImpalaContext context)
         {
-            context.Articles.AddOrUpdate(x => x.ArticleID, //I know I spelled arcticle wrong
+            context.Articles.AddOrUpdate(x => x.ArticleID, 
                 new Article() { URL = "http://www.nzherald.co.nz/entertainment/news/article.cfm?c_id=1501119&objectid=11551071", Title = "Concert Review", Description = "Logan Campbell Centre" },
                 new Article() { URL = "http://themusic.com.au/news/all/2015/11/25/tame-impala-courtney-barnett-named-on-qs-influential-top-albums-list/", Title = "Album Reward", Description = "Tame Impala Top Influential Albums Of The Year List" },
                 new Article() { URL = "http://www.smh.com.au/entertainment/tame-impala-review-psychedelia-and-sway-for-all-ages-20151122-gl4s1h.html", Title = "Review", Description = "Tame Impala review: psychedelia and sway for all ages" }
+                );
+
+            context.Videos.AddOrUpdate(x => x.VideoID,
+                new Video() { VideoTitle = "The Less I Know The Better", VideoURL = "https://www.youtube.com/embed/sBzrzS1Ag_g" },
+                new Video() { VideoTitle = "Eventually", VideoURL = "https://www.youtube.com/embed/GHe8kKO8uds" },
+                new Video() { VideoTitle = "Half Glass Full of Wine", VideoURL = "https://www.youtube.com/embed/zfcHq0hhFWg" },
+                new Video() { VideoTitle = "Elephant", VideoURL = "https://www.youtube.com/embed/b0jqPvpn3sY" }
+
                 );
 
             context.UpcomingGigs.AddOrUpdate(x => x.UpcomingGigID,
