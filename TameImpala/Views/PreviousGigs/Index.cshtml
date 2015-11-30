@@ -35,7 +35,7 @@
                     if (textStatus == "success") {
                         console.log(JSON.stringify(result));
                         var data = "";
-                        data += "<br><br>Showing results for " + result.d[0].Location + "<br><br>"; //from db
+                        data += "<br><br>Showing results for rating: " + result.d[0].Rating + "<br><br>"; //from db
                         for (var i = 0; i < result.d.length; i++) {
                             data += "<p class=lead>" + "ID = " + result.d[i].PreviousGigID + "</p>";
                             data += "<p class=lead>" + "Title = " + result.d[i].Title + "</p>";
@@ -76,38 +76,35 @@
         <th>
             @Html.DisplayNameFor(model => model.Rating)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UserID)
-        </th>
+
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Location)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Date)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Rating)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UserID)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PreviousGigID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PreviousGigID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PreviousGigID })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.PreviousGigID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.PreviousGigID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PreviousGigID })
+            </td>
+        </tr>
+    }
 
 </table>

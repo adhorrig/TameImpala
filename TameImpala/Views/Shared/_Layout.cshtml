@@ -27,6 +27,7 @@
                     <li>@Html.ActionLink("Previous", "Index", "PreviousGigs")</li>
                     <li>@Html.ActionLink("Article", "Index", "Articles")</li>
                     <li>@Html.ActionLink("Music", "Index", "Videos")</li>
+                    <li><a href="../TameImpalaService.asmx">API</a></li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -45,23 +46,5 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
-    <script>
-    $(function() {
-        $('#btnGetGigs').click(function() {
-            $.ajax({
-            type: 'POST',
-            url: 'TameImpalaService.asmx/GetAllGigs',
-            dataType: 'json',
-            contentType: 'application/json; charset=utf-8',
-            success: function(response) {
-                $('#lblData').html(JSON.stringify(response));
-            },
-            error: function(error) {
-                console.log(error);
-            }
-         });
-        });
-    });
-    </script>
 </body>
 </html>

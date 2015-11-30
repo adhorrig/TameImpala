@@ -32,6 +32,8 @@ C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\Mi
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\Newtonsoft.Json.dll
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\Owin.dll
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.dll
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.Mvc.dll
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\System.Web.Helpers.dll
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\System.Web.Mvc.dll
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\System.Web.Optimization.dll
@@ -41,6 +43,8 @@ C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\Sy
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\System.Web.WebPages.Razor.dll
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\WebGrease.dll
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.xml
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.Mvc.xml
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\System.Web.Helpers.xml
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\System.Web.Mvc.xml
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\System.Web.Optimization.xml
@@ -72,13 +76,9 @@ C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\De
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.newsIDstringToint.resources
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.seed.resources
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.newstoarticle.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.videos.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.videotitle.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.removeuserid.resources
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.csproj.GenerateResource.Cache
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.dll
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.pdb
-C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.videos.resources
-C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.Migrations.videotitle.resources
-C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Debug\TameImpala.csprojResolveAssemblyReference.cache
-C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.dll
-C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.Mvc.dll
-C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.xml
-C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.Mvc.xml

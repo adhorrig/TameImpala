@@ -225,6 +225,10 @@
     <Compile Include="Migrations\201511301409291_videotitle.Designer.cs">
       <DependentUpon>201511301409291_videotitle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511301549445_removeuserid.cs" />
+    <Compile Include="Migrations\201511301549445_removeuserid.Designer.cs">
+      <DependentUpon>201511301549445_removeuserid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Article.cs" />
@@ -305,11 +309,6 @@
     <Content Include="Views\UpcomingGigs\Details.cshtml" />
     <Content Include="Views\UpcomingGigs\Edit.cshtml" />
     <Content Include="Views\UpcomingGigs\Index.cshtml" />
-    <Content Include="Views\PreviousGigs\Create.cshtml" />
-    <Content Include="Views\PreviousGigs\Delete.cshtml" />
-    <Content Include="Views\PreviousGigs\Details.cshtml" />
-    <Content Include="Views\PreviousGigs\Edit.cshtml" />
-    <Content Include="Views\PreviousGigs\Index.cshtml" />
     <Content Include="Views\Articles\Create.cshtml" />
     <Content Include="Views\Articles\Delete.cshtml" />
     <Content Include="Views\Articles\Details.cshtml" />
@@ -320,6 +319,11 @@
     <Content Include="Views\Videos\Details.cshtml" />
     <Content Include="Views\Videos\Edit.cshtml" />
     <Content Include="Views\Videos\Index.cshtml" />
+    <Content Include="Views\PreviousGigs\Create.cshtml" />
+    <Content Include="Views\PreviousGigs\Delete.cshtml" />
+    <Content Include="Views\PreviousGigs\Details.cshtml" />
+    <Content Include="Views\PreviousGigs\Edit.cshtml" />
+    <Content Include="Views\PreviousGigs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -362,6 +366,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511301409291_videotitle.resx">
       <DependentUpon>201511301409291_videotitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511301549445_removeuserid.resx">
+      <DependentUpon>201511301549445_removeuserid.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

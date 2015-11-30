@@ -46,7 +46,7 @@ namespace TameImpala.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PreviousGigID,Location,Date,Description,Title,Rating,UserID")] PreviousGig previousGig)
+        public ActionResult Create([Bind(Include = "PreviousGigID,Location,Date,Description,Title,Rating")] PreviousGig previousGig)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace TameImpala.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PreviousGigID,Location,Date,Description,Title,Rating,UserID")] PreviousGig previousGig)
+        public ActionResult Edit([Bind(Include = "PreviousGigID,Location,Date,Description,Title,Rating")] PreviousGig previousGig)
         {
             if (ModelState.IsValid)
             {
