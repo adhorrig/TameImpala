@@ -173,6 +173,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PreviousGigsController.cs" />
     <Compile Include="Controllers\UpcomingGigsController.cs" />
+    <Compile Include="Controllers\VideosController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -208,6 +209,14 @@
     <Compile Include="Migrations\201511282008202_newstoarticle.Designer.cs">
       <DependentUpon>201511282008202_newstoarticle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511301248245_videos.cs" />
+    <Compile Include="Migrations\201511301248245_videos.Designer.cs">
+      <DependentUpon>201511301248245_videos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511301409291_videotitle.cs" />
+    <Compile Include="Migrations\201511301409291_videotitle.Designer.cs">
+      <DependentUpon>201511301409291_videotitle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Article.cs" />
@@ -216,6 +225,7 @@
     <Compile Include="Models\PreviousGig.cs" />
     <Compile Include="Models\TameImpalaContext.cs" />
     <Compile Include="Models\UpcomingGig.cs" />
+    <Compile Include="Models\Video.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="TameImpalaService.asmx.cs">
@@ -296,6 +306,11 @@
     <Content Include="Views\Articles\Details.cshtml" />
     <Content Include="Views\Articles\Edit.cshtml" />
     <Content Include="Views\Articles\Index.cshtml" />
+    <Content Include="Views\Videos\Create.cshtml" />
+    <Content Include="Views\Videos\Delete.cshtml" />
+    <Content Include="Views\Videos\Details.cshtml" />
+    <Content Include="Views\Videos\Edit.cshtml" />
+    <Content Include="Views\Videos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -332,6 +347,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511282008202_newstoarticle.resx">
       <DependentUpon>201511282008202_newstoarticle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511301248245_videos.resx">
+      <DependentUpon>201511301248245_videos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511301409291_videotitle.resx">
+      <DependentUpon>201511301409291_videotitle.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

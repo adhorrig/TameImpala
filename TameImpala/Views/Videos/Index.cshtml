@@ -1,0 +1,23 @@
+﻿@model IEnumerable<TameImpala.Models.Video>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Listen to Tame impala below!</h2>
+
+<p>
+    @Html.ActionLink("Add a new video", "Create")
+</p>
+
+
+@foreach (var item in Model)
+{
+    <div class="jumbotron">
+        <h3>@Html.DisplayFor(modelItem => item.VideoTitle)</h3>
+        <iframe width="560" height="315" src="@Html.DisplayFor(modelItem => item.VideoURL)" frameborder="0" allowfullscreen></iframe>
+
+        <p>@Html.ActionLink("Edit", "Edit", new { id = item.VideoID }) | @Html.ActionLink("Details", "Details", new { id = item.VideoID }) | @Html.ActionLink("Delete", "Delete", new { id = item.VideoID })</p>
+              
+    </div>
+}

@@ -13,11 +13,10 @@ namespace TameImpala.Models
 
         }
 
-        public DbSet<FavoriteGig> FavoriteGigs { get; set; }
         public DbSet<UpcomingGig> UpcomingGigs { get; set; }
         public DbSet<PreviousGig> PreviousGigs { get; set; }
-        public DbSet<GoingToGig> GoingToGigs { get; set; }
         public DbSet<Article> Articles { get; set; }
+        public DbSet<Video> Videos { get; set; }
         
     }
 }
