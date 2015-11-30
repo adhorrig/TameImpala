@@ -169,8 +169,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ArticlesController.cs" />
-    <Compile Include="Controllers\FavoriteGigsController.cs" />
-    <Compile Include="Controllers\GoingToGigsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PreviousGigsController.cs" />
@@ -213,8 +211,6 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Article.cs" />
-    <Compile Include="Models\FavoriteGig.cs" />
-    <Compile Include="Models\GoingToGig.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PreviousGig.cs" />
@@ -285,11 +281,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\GoingToGigs\Create.cshtml" />
-    <Content Include="Views\GoingToGigs\Delete.cshtml" />
-    <Content Include="Views\GoingToGigs\Details.cshtml" />
-    <Content Include="Views\GoingToGigs\Edit.cshtml" />
-    <Content Include="Views\GoingToGigs\Index.cshtml" />
     <Content Include="Views\UpcomingGigs\Create.cshtml" />
     <Content Include="Views\UpcomingGigs\Delete.cshtml" />
     <Content Include="Views\UpcomingGigs\Details.cshtml" />
@@ -300,11 +291,6 @@
     <Content Include="Views\PreviousGigs\Details.cshtml" />
     <Content Include="Views\PreviousGigs\Edit.cshtml" />
     <Content Include="Views\PreviousGigs\Index.cshtml" />
-    <Content Include="Views\FavoriteGigs\Create.cshtml" />
-    <Content Include="Views\FavoriteGigs\Delete.cshtml" />
-    <Content Include="Views\FavoriteGigs\Details.cshtml" />
-    <Content Include="Views\FavoriteGigs\Edit.cshtml" />
-    <Content Include="Views\FavoriteGigs\Index.cshtml" />
     <Content Include="Views\Articles\Create.cshtml" />
     <Content Include="Views\Articles\Delete.cshtml" />
     <Content Include="Views\Articles\Details.cshtml" />
