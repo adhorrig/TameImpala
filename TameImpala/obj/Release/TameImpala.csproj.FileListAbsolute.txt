@@ -76,3 +76,10 @@ C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Re
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Release\TameImpala.csproj.GenerateResource.Cache
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Release\TameImpala.dll
 C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Release\TameImpala.pdb
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.dll
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.Mvc.dll
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.xml
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\bin\PagedList.Mvc.xml
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Release\TameImpala.Migrations.videos.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Release\TameImpala.Migrations.videotitle.resources
+C:\Users\Adam\Documents\Visual Studio 2015\Projects\TameImpala\TameImpala\obj\Release\TameImpala.Migrations.removeuserid.resources

@@ -4,7 +4,57 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Here is all the previous gigs for Tame Impala!</h2>
+
+<h2>Search by rating</h2>
+<div>
+    <input id="searchString" type="text" placeholder="Enter a rating" />
+    <br />
+    <br />
+    <input type="button" value="Search gigs " class="btn btn-primary" onclick="doSearch()" />
+</div>
+<div id="results">
+</div>
+@section scripts {
+    <script type="text/javascript">
+        function doSearch() {
+            $("#results").html("");
+
+            var queryData = {
+                "rating": $("#searchString").val() //from webmethod
+            };
+
+            $.ajax({
+                type: "POST",
+                contentType: "application/json; charset=utf-8",
+                url: "/TameImpalaService.asmx/GetGigByRating",
+                data: JSON.stringify(queryData),
+                dataType: "json",
+                async: true,
+                success: function (result, textStatus) {
+                    if (textStatus == "success") {
+                        console.log(JSON.stringify(result));
+                        var data = "";
+                        data += "<br><br>Showing results for rating: " + result.d[0].Rating + "<br><br>"; //from db
+                        for (var i = 0; i < result.d.length; i++) {
+                            data += "<p class=lead>" + "ID = " + result.d[i].PreviousGigID + "</p>";
+                            data += "<p class=lead>" + "Title = " + result.d[i].Title + "</p>";
+                            data += "<p class=lead>" + "Description = " + result.d[i].Description + "</p>";
+                            data += "<p class=lead>" + "Rating = " + result.d[i].Rating + "</p>";
+                            data += "<p class=lead>" + "Location = " + result.d[i].Location + "</p>";
+                        }
+
+                        $("#results").append(data);
+                        console.log(data);
+                    }
+                },
+                error: function (result, status, error) {
+                    $("results").html("error");
+                }
+            })
+        }
+    </script>
+} </br>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -26,38 +76,35 @@
         <th>
             @Html.DisplayNameFor(model => model.Rating)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UserID)
-        </th>
+
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Location)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Date)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Rating)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UserID)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.PreviousGigID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.PreviousGigID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.PreviousGigID })
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.PreviousGigID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.PreviousGigID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PreviousGigID })
+            </td>
+        </tr>
+    }
 
 </table>
