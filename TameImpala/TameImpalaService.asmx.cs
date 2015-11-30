@@ -54,9 +54,10 @@ namespace TameImpala
         }
 
         [WebMethod]
-        public string HelloWorld()
+        public List<PreviousGig> GetGigByRating(int rating)
         {
-            return "Hello World";
+            var gigs = db.PreviousGigs.Where(u => u.Rating == rating).ToList();
+            return gigs;
         }
     }
 }
