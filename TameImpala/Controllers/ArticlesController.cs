@@ -123,6 +123,7 @@ namespace TameImpala.Controllers
         }
 
         // GET: Articles/Delete/5
+        [Authorize(Users = "admin")]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -138,6 +139,7 @@ namespace TameImpala.Controllers
         }
 
         // POST: Articles/Delete/5
+        [Authorize(Users = "admin")]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
