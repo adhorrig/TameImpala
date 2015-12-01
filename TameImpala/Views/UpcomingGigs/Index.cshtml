@@ -1,4 +1,6 @@
-﻿@model IEnumerable<TameImpala.Models.UpcomingGig>
+﻿@using PagedList.Mvc;
+@model PagedList.IPagedList<TameImpala.Models.UpcomingGig>
+
 
 @{
     ViewBag.Title = "Index";
@@ -62,19 +64,19 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Location)
+            Location
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Price)
+            Price
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Date)
+            Date
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Description)
+            Description
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Title)
+            Title
         </th>
         <th></th>
     </tr>
@@ -104,6 +106,6 @@
     </tr>
 }
 
-
-
 </table>
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, pageSize = Model.PageSize }))

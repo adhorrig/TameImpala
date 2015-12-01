@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using TameImpala.Models;
+using PagedList;
 
 namespace TameImpala.Controllers
 {
@@ -15,9 +16,11 @@ namespace TameImpala.Controllers
         private TameImpalaContext db = new TameImpalaContext();
 
         // GET: Videos
-        public ActionResult Index()
+        public ActionResult Index(int page = 1, int pageSize = 5)
         {
-            return View(db.Videos.ToList());
+            List<Video> videos = db.Videos.ToList();
+            PagedList<Video> model = new PagedList<Video>(videos, page, pageSize);
+            return View(model);
         }
 
         // GET: Videos/Details/5
