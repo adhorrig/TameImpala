@@ -6,6 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using TameImpala.Models;
+using Microsoft.Owin.Security.Twitter;
+using Microsoft.Owin.Security;
 
 namespace TameImpala
 {
@@ -50,19 +52,19 @@ namespace TameImpala
             //    clientId: "",
             //    clientSecret: "");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+           // app.UseTwitterAuthentication(new TwitterAuthenticationOptions
+           // ConsumerKey = "Yva1J7D7M8CoUxIBWfm04mEU7",
+           //ConsumerSecret = "VbbCiMSXoX4yqrkb51jIxEnkPy5ebpz6dr267RZ57bMq3dtPbV",
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+            app.UseFacebookAuthentication(
+               appId: "151959878495253",
+               appSecret: "1b96d3fe92c2f685e0f492815a9a03a2");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "383250305451-5120uc7nk905ecjlm2ehvs373j0620nv.apps.googleusercontent.com",
+                ClientSecret = "Ahcgr3vEt9c1RxhyyqRI9jwG"
+            });
         }
     }
 }
