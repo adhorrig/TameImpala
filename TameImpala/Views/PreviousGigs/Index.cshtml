@@ -38,11 +38,11 @@
                         var data = "";
                         data += "<br><br>Showing results for rating: " + result.d[0].Rating + "<br><br>"; //from db
                         for (var i = 0; i < result.d.length; i++) {
-                            data += "<p class=lead>" + "ID = " + result.d[i].PreviousGigID + "</p>";
                             data += "<p class=lead>" + "Title = " + result.d[i].Title + "</p>";
                             data += "<p class=lead>" + "Description = " + result.d[i].Description + "</p>";
                             data += "<p class=lead>" + "Rating = " + result.d[i].Rating + "</p>";
                             data += "<p class=lead>" + "Location = " + result.d[i].Location + "</p>";
+                            data += "<p class=lead>" + "---------------------" + "</p>";
                         }
 
                         $("#results").append(data);
